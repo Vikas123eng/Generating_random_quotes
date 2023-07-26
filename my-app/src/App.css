@@ -1,0 +1,95 @@
+/* App.css */
+body {
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #511143;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(12px + 2vmin);
+  color: white;
+}
+
+/* Updated styles for title, quote, author, and generator button */
+
+.Title {
+  text-decoration: underline;
+  font-family: "Arial", Helvetica, sans-serif;
+  padding: 1rem;
+  color: bisque;
+  border-radius: 25px;
+  margin-bottom: 2rem;
+}
+
+.Quote {
+  font-style: italic;
+  font-size: 24px;
+  color: #1fbac8;
+  border: 2px solid #1fbac8;
+  padding: 1.2rem;
+  border-radius: 25px;
+  margin-bottom: 1rem;
+}
+
+.Author {
+  font-style: italic;
+  font-size: 20px;
+  color: #d4bb1c;
+  border: 2px solid #d4bb1c;
+  padding: 1.2rem;
+  border-radius: 25px;
+  margin-bottom: 1rem;
+}
+
+.Generator {
+  background-color: #78dcdc;
+  color: #c04589;
+  border: 3px solid #b629a8;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  font-size: 20px;
+  margin-top: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Generator:hover {
+  background-color: #c04589;
+  color: #78dcdc;
+}
+
+/* Center the quote and author elements */
+.QuotesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 600px) {
+  .Title {
+    font-size: 24px;
+  }
+
+  .Quote {
+    font-size: 20px;
+  }
+
+  .Author {
+    font-size: 16px;
+  }
+
+  .Generator {
+    font-size: 18px;
+    padding: 0.8rem 1.6rem;
+  }
+}
